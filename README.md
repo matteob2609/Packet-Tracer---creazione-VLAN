@@ -4,11 +4,11 @@
 
 La creazione della VLAN avverrà tramite **tre step** diversi:
 
-  - [Vlan base](https://github.com/matteob2609/Packet-Tracer-creazione-VLAN#ghost-step-1---vlan-base);
+  - [VLAN base](https://github.com/matteob2609/Packet-Tracer-creazione-VLAN#ghost-step-1---vlan-base);
 
-  - Viene aggiunto il trunking;
+  - [VLAN trunking](https://github.com/matteob2609/Packet-Tracer-creazione-VLAN#ghost-step-2---vlan-trunking);
 
-  - Viene aggiunto il routing.
+  - [VLAN routing)(https://github.com/matteob2609/Packet-Tracer-creazione-VLAN#ghost-step-2---vlan-routing).
 
 ---
 
