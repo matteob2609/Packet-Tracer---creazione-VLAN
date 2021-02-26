@@ -4,7 +4,7 @@
 
 La creazione della VLAN avverrà tramite **tre step** diversi:
 
-  - VLAN base;
+  - [Vlan base](https://github.com/matteob2609/Packet-Tracer-creazione-VLAN#ghost-step-1---vlan-base);
 
   - Viene aggiunto il trunking;
 
