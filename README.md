@@ -1,6 +1,6 @@
 # Creazione di una semplice VLAN
 
-:heavy_exclamation_mark: **Prerequisito**: avere Packet Tracer (risorsa Cisco) installata sul computer.
+:heavy_exclamation_mark: **Prerequisito**: avere Packet Tracer (risorsa Cisco) installato sul computer.
 
 La creazione della VLAN avverrà tramite **tre step** diversi:
 
