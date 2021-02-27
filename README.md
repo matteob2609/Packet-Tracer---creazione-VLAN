@@ -66,7 +66,7 @@ Per fare questo bisognerà selezionare lo Switch, spostarsi su _Config_ e selezi
 
   - **FastEthernet 0/3**, impostarla su _Access_ e selezionare la VLAN 20, escludendo le altre;
 
-  - **FastEthernet 0/4**, impostarla su _Access_ e selezionare la VLAN 40, escludendo le altre;
+  - **FastEthernet 0/4**, impostarla su _Access_ e selezionare la VLAN 30, escludendo le altre;
 
 :pushpin:`Checkpoint: per verificare che le porte siano state impostate correttamente e che siano state assegnate alle diverse VLAN eseguire il comando 'show vlan brief' dalla riga di comando dello Switch. L'output dovrà essere:`
 
