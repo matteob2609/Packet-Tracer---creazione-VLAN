@@ -22,13 +22,13 @@ La creazione della VLAN avverrà tramite **tre step** diversi:
 
 ### :ghost: STEP 1 - VLAN BASE
 
-Creare il modello di partenza utilizzando 1 **Switch 2960** e 4 **PC** ed effettuare il collegamento tra loro selezionando la connessione automatica.
+Creare il modello di partenza utilizzando 1 **Switch 2960**, 4 **PC** ed effettuare il collegamento tra loro selezionando la connessione automatica.
 
 Disporre in questo modo i device:
 
 ![image](https://user-images.githubusercontent.com/61114792/109363296-84945400-788c-11eb-818c-348960178085.png)
 
-(Per visualizzare il nome e il numero delle porte selezionare _Options -> Preferences -> Show port labels_).
+(Per visualizzare le etichette delle porte selezionare _Options -> Preferences -> Show port labels_).
 
 Verranno create 3 VLAN, chiamate Amministrazione (VLAN10), Vendite (VLAN20) e Gestione (VLAN30).
 
@@ -46,7 +46,7 @@ Al PC della gestione assegnare il seguente IP e la seguente subnet mask:
 
   - **PC30** - IP: _192.168.0.30_ Subnet mask: _255.255.255.0_
 
-:pushpin:`Checkpoint: Eseguire tramite il prompt del PC10 il comando ping 192.168.0.30 per controllare se i PC comunicano tra loro, confermando il corretto assegnamento degli indirizzi.`
+:pushpin:`Checkpoint: eseguire tramite il prompt del PC10 il comando ping 192.168.0.30 per controllare se i PC comunicano tra loro, confermando il corretto assegnamento degli indirizzi.`
 
 Per creare le VLAN ed abilitarle bisognerà accedere allo Switch, selezionado la schermata _Config_ e successivamente su _VLAN Database_:
 
@@ -68,7 +68,7 @@ Per fare questo bisognerà selezionare lo Switch, spostarsi su _Config_ e selezi
 
   - **FastEthernet 0/4**, impostarla su _Access_ e selezionare la VLAN 40, escludendo le altre;
 
-:pushpin:`Checkpoint: Per verificare che le porte siano state impostate correttamente e che siano state assegnate alle diverse VLAN eseguire il comando show vlan brief dalla riga di comando dello Switch. L'output dovrà essere:`
+:pushpin:`Checkpoint: per verificare che le porte siano state impostate correttamente e che siano state assegnate alle diverse VLAN eseguire il comando show vlan brief dalla riga di comando dello Switch. L'output dovrà essere:`
 
     10   Amministrazione                  active    Fa0/1, Fa0/2
     20   Vendite                          active    Fa0/3
@@ -77,6 +77,8 @@ Per fare questo bisognerà selezionare lo Switch, spostarsi su _Config_ e selezi
     1003 token-ring-default               active    
     1004 fddinet-default                  active    
     1005 trnet-default                    active    
+    
+:pushpin:`Checkpoint: riprovare ad eseguire tramite il prompt del PC10 il comando ping 192.168.0.30, i due host non saranno piu' raggiungibili in quanto appartengono a due VLAN differenti.`
 
 [Torna su](https://github.com/matteob2609/Packet-Tracer-creazione-VLAN#creazione-di-una-semplice-vlan)
 
