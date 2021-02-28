@@ -32,29 +32,47 @@ Disporre in questo modo i device:
 
 Verranno create 3 VLAN, chiamate Amministrazione (VLAN10), Vendite (VLAN20) e Gestione (VLAN30).
 
-Ai PC dell'amministrazione assegnare i seguenti IP e la seguente subnet mask:
+Ai PC dell'amministrazione assegnare i seguenti IP e la seguente subnet mask (_PC -> Desktop -> IP Configuration_):
 
-  - **PC10_1** - IP: _192.168.10.1_ Subnet mask: _255.255.255.0_
+  - **PC10_1**
+                              
+        IP Address          192.168.10.1 
+        Subnet Mask         255.255.255.0
  
-  - **PC10_2** - IP: _192.168.10.2_ Subnet mask: _255.255.255.0_
+  - **PC10_2**
+
+        IP Address          192.168.10.2 
+        Subnet Mask         255.255.255.0
 
 Al PC delle vendite assegnare il seguente IP e la seguente subnet mask:
 
-  - **PC20_1** - IP: _192.168.20.1_ Subnet mask: _255.255.255.0_
+  - **PC20_1**
+
+        IP Address          192.168.20.1
+        Subnet Mask         255.255.255.0
 
 Al PC della gestione assegnare il seguente IP e la seguente subnet mask:
 
-  - **PC30_1** - IP: _192.168.30.1_ Subnet mask: _255.255.255.0_
+  - **PC30_1**
+
+        IP Address          192.168.30.1
+        Subnet Mask         255.255.255.0
 
 :pushpin:`Checkpoint: eseguire tramite il prompt del PC10_1 il comando 'ping 192.168.10.2' per controllare se i PC comunicano tra loro, confermando il corretto assegnamento degli indirizzi.`
 
 Per creare le VLAN ed abilitarle bisognerà accedere allo Switch, selezionado la schermata _Config_ e successivamente su _VLAN Database_:
 
-  - VLAN Number: _10_, VLAN Name: _Amministrazione_;
+        VLAN Number          10
+        VLAN Name            Amministrazione
+        Add
 
-  - VLAN Number: _20_, VLAN Name: _Vendite_;
+        VLAN Number          20
+        VLAN Name            Vendite
+        Add
 
-  - VLAN Number: _30_, VLAN Name: _Gestione_.
+        VLAN Number          30
+        VLAN Name            Gestione
+        Add
 
 Dopo aver fatto quest'operazione, individuare quali interfacce dello Switch sono collegate alle diverse VLAN e assegnarle.
 
