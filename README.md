@@ -62,17 +62,17 @@ Al PC della gestione assegnare il seguente IP e la seguente subnet mask:
 
 Per creare le VLAN ed abilitarle bisognerà accedere allo Switch, selezionado la schermata _Config_ e successivamente su _VLAN Database_:
 
-        VLAN Number          10
-        VLAN Name            Amministrazione
-        Add
+    VLAN Number          10
+    VLAN Name            Amministrazione
+    Add
 
-        VLAN Number          20
-        VLAN Name            Vendite
-        Add
+    VLAN Number          20
+    VLAN Name            Vendite
+    Add
 
-        VLAN Number          30
-        VLAN Name            Gestione
-        Add
+    VLAN Number          30
+    VLAN Name            Gestione
+    Add
 
 Dopo aver fatto quest'operazione, individuare quali interfacce dello Switch sono collegate alle diverse VLAN e assegnarle.
 
