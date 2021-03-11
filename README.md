@@ -137,8 +137,7 @@ Per fare questo bisognerà selezionare lo **Switch1**, spostarsi su _Config_ e s
 
   - **FastEthernet 0/4**, impostarla su _Trunk_ e selezionare la VLAN10 e la VLAN20, escludendo la VLAN30 in quanto non è presente e il suo traffico non può essere trasmesso verso lo Switch di sopra.
 
-:pushpin:`Checkpoint: per verificare che le VLAN siano state impostate correttamente tra i due Switch provare a eseguire dal PC10_1 il comando 'ping' verso il PC10_3.
-Se il comando da esito positivo vuol dire che i due PC comunicano tra loro e possiamo proseguire al passo successivo.
+:pushpin:`Checkpoint: per verificare che le VLAN siano state impostate correttamente tra i due Switch provare a eseguire dal PC10_1 il comando 'ping' verso il PC10_3. Se il comando da esito positivo vuol dire che i due PC comunicano tra loro e possiamo proseguire al passo successivo.
 
 [Torna su](https://github.com/matteob2609/Packet-Tracer-creazione-VLAN#creazione-di-una-semplice-vlan)
 
