@@ -127,7 +127,7 @@ Al PC dell'amministrazione assegnare il seguente IP e la seguente subnet mask:
         IP Address          192.168.10.3
         Subnet Mask         255.255.255.0
         
-Ora bisogna impostare in **trunk** le due porte che collegano i due Switch, in questo caso le porte _Fa0/5_ e _Fa0/4_
+Ora bisogna impostare in **trunk** le due porte che collegano i due Switch, in questo caso le porte _Fa0/5_ e _Fa0/4_.
 
 Per fare questo bisognerà selezionare lo **Switch0**, spostarsi su _Config_ e selezionare l'interfaccia:
 
