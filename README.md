@@ -58,7 +58,7 @@ Al PC della gestione assegnare il seguente IP e la seguente subnet mask:
         IP Address          192.168.30.1
         Subnet Mask         255.255.255.0
 
-:pushpin:`Checkpoint: eseguire tramite il prompt del PC10_1 il comando 'ping 192.168.10.2' per controllare se i PC comunicano tra loro, confermando il corretto assegnamento degli indirizzi.`
+:pushpin:`Checkpoint: eseguire il 'ping' da PC10_1 a PC10_2 per controllare che i PC comunichino tra loro, confermando il corretto assegnamento degli indirizzi.`
 
 Per creare le VLAN ed abilitarle bisognerà accedere allo Switch, selezionado la schermata _Config_ e successivamente su _VLAN Database_:
 
