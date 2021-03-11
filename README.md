@@ -108,7 +108,7 @@ Disporre in questo modo i device:
 
 ![image](https://user-images.githubusercontent.com/61114792/110806183-16836000-8282-11eb-8298-641f7cdfd871.png)
 
-Ai PC delle vendite assegnare il seguente IP e la seguente subnet mask:
+Ai PC delle vendite assegnare i seguenti IP e la seguente subnet mask (_PC -> Desktop -> IP Configuration_):
 
   - **PC20_2**
                               
