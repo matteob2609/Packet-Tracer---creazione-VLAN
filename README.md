@@ -157,7 +157,7 @@ Per fare questo bisognerà selezionare lo **Switch1**, spostarsi su _Config_ e s
 
 ### :ghost: STEP 3 - VLAN ROUTING
 
-Aggiungere al modello precedente 1 **Router 2911** ed effettuare il collegamento allo **Switch0** tramite la connessione automatica
+Aggiungere al modello precedente 1 **Router 2911** ed effettuare il collegamento allo Switch tramite la connessione automatica
 Configurando questo Router, detto Router on-a-stick, sarà permesso il routing inter-VLAN.
 
 Disporre in questo modo i device:
