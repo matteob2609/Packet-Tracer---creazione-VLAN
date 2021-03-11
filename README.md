@@ -127,6 +127,16 @@ Al PC dell'amministrazione assegnare il seguente IP e la seguente subnet mask:
         IP Address          192.168.10.3
         Subnet Mask         255.255.255.0
         
+Dopo aver fatto quest'operazione, individuare quali interfacce dello Switch sono collegate alle diverse VLAN e assegnarle.
+
+Per fare questo bisognerà selezionare lo Switch, spostarsi su _Config_ e selezionare l'interfaccia:
+
+  - **FastEthernet 0/1**, impostarla su _Access_ e selezionare la VLAN 20, escludendo le altre;
+  
+  - **FastEthernet 0/2**, impostarla su _Access_ e selezionare la VLAN 20, escludendo le altre;
+  
+  - **FastEthernet 0/3**, impostarla su _Access_ e selezionare la VLAN 10, escludendo le altre;
+        
 Ora bisogna impostare in **trunk** le due porte che collegano i due Switch, in questo caso le porte _Fa0/5_ e _Fa0/4_.
 
 Per fare questo bisognerà selezionare lo **Switch0**, spostarsi su _Config_ e selezionare l'interfaccia:
@@ -146,5 +156,36 @@ Per fare questo bisognerà selezionare lo **Switch1**, spostarsi su _Config_ e s
 ---
 
 ### :ghost: STEP 3 - VLAN ROUTING
+
+Aggiungere al modello precedente 1 **Router 2911** ed effettuare il collegamento allo **Switch0** tramite la connessione automatica
+Configurando questo Router, detto Router on-a-stick, sarà permesso il routing inter-VLAN.
+
+Disporre in questo modo i device:
+
+![image](https://user-images.githubusercontent.com/61114792/109317443-02386f80-784d-11eb-8fc5-6efd618fe54d.png)
+
+Per prima cosa sarà necessario abilitare la porta _Gig0/0_ del Router, facendo click su di esso, selezionando _Config_ e in _Interface_ selezionare _GigabitEthernet 0/0_, mettendo la spunta su _On_.
+
+Visto che ci sono tre VLAN, occorre definire rispettivamente tre sottointerfacce dell'interfaccia _GigabitEthernet 0/0_.
+
+Spostarsi su _CLI_ e dare i rispettivi comandi per creare le tre sottointerfacce:
+
+  - _enable_
+  
+  - _conf t_
+  
+  - _interface gigabitethernet 0/0.10_, per le rimanenti due sostituire il .10 con il numero delle altre due VLAN;
+  
+  - _encapsulation dot1Q 10_, Stesso discorso di sopra vale anche qui;
+  
+  - _ip address 192.168.10.254 255.255.255.0_, assegno l'indirizzo del gateway della rispettiva VLAN (ultimo disponibile). Stesso discorso di sopra solamente che vale per l'indirizzo IP, modificando ... .10 ...
+
+Ora bisogna impostare in **trunk** la porta dello Switch che si interfaccia con il Router.
+
+Per fare questo bisognerà selezionare lo **Switch0**, spostarsi su _Config_ e selezionare l'interfaccia:
+
+  - **FastEthernet 0/6**, impostarla su _Access_ e selezionare tutte e tre le VLAN;
+
+:pushpin:`Checkpoint: eseguire il 'ping' da PC10_1 a PC20_1 per verificare che due host appartenenti riescano a comunicare tra loro.`
 
 [Torna su](https://github.com/matteob2609/Packet-Tracer-creazione-VLAN#creazione-di-una-semplice-vlan)
