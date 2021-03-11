@@ -184,7 +184,7 @@ Ora bisogna impostare in **trunk** la porta dello Switch che si interfaccia con 
 
 Per fare questo bisognerà selezionare lo Switch, spostarsi su _Config_ e selezionare l'interfaccia:
 
-  - **FastEthernet 0/6**, impostarla su _Access_ e selezionare tutte e tre le VLAN;
+  - **FastEthernet 0/6**, impostarla su _Trunk_ e selezionare tutte e tre le VLAN;
 
 :pushpin:`Checkpoint: eseguire il 'ping' da PC10_1 a PC20_1 per verificare che due host appartenenti riescano a comunicare tra loro.`
 
