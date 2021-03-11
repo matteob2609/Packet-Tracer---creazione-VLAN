@@ -174,9 +174,9 @@ Spostarsi su _CLI_ e dare i rispettivi comandi per creare le tre sottointerfacce
   
   - _conf t_
   
-  - _interface gigabitethernet 0/0.10_, per le rimanenti due sostituire il .10 con il numero delle altre due VLAN;
+  - _interface gigabitethernet 0/0.10_, per le rimanenti due sostituire il .10 con il numero rispettivo;
   
-  - _encapsulation dot1Q 10_, Stesso discorso di sopra vale anche qui;
+  - _encapsulation dot1Q 10_, lo stesso discorso di sopra vale anche qui;
   
   - _ip address 192.168.10.254 255.255.255.0_, assegno l'indirizzo del gateway della rispettiva VLAN (ultimo disponibile). Stesso discorso di sopra solamente che vale per l'indirizzo IP, modificando ... .10 ...
 
