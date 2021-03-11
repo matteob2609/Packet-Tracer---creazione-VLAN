@@ -182,7 +182,7 @@ Spostarsi su _CLI_ e dare i rispettivi comandi per creare le tre sottointerfacce
 
 Ora bisogna impostare in **trunk** la porta dello Switch che si interfaccia con il Router.
 
-Per fare questo bisognerà selezionare lo **Switch0**, spostarsi su _Config_ e selezionare l'interfaccia:
+Per fare questo bisognerà selezionare lo Switch, spostarsi su _Config_ e selezionare l'interfaccia:
 
   - **FastEthernet 0/6**, impostarla su _Access_ e selezionare tutte e tre le VLAN;
 
