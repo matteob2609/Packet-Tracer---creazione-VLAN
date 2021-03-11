@@ -102,6 +102,44 @@ Per fare questo bisognerà selezionare lo Switch, spostarsi su _Config_ e selezi
 
 ### :ghost: STEP 2 - VLAN TRUNKING
 
+Aggiungere al modello precedente 1 **Switch 2960**, altri 4 **PC** ed effettuare il collegamento tra loro selezionando la connessione automatica.
+
+Disporre in questo modo i device:
+
+![image](https://user-images.githubusercontent.com/61114792/110806183-16836000-8282-11eb-8298-641f7cdfd871.png)
+
+Ai PC delle vendite assegnare il seguente IP e la seguente subnet mask:
+
+  - **PC20_2**
+                              
+        IP Address          192.168.20.2
+        Subnet Mask         255.255.255.0
+ 
+  - **PC20_3**
+
+        IP Address          192.168.20.3
+        Subnet Mask         255.255.255.0
+        
+Al PC dell'amministrazione assegnare il seguente IP e la seguente subnet mask:
+
+  - **PC10_3**
+  
+        IP Address          192.168.10.3
+        Subnet Mask         255.255.255.0
+        
+Ora bisogna impostare in **trunk** le due porte che collegano i due Switch, in questo caso le porte:
+
+Per fare questo bisognerà selezionare lo **Switch0**, spostarsi su _Config_ e selezionare l'interfaccia:
+
+  - **FastEthernet 0/5**, impostarla su _Trunk_ e selezionare la VLAN10 e la VLAN20, escludendo la VLAN30 in quanto non è presente al di sotto.
+
+Per fare questo bisognerà selezionare lo **Switch1**, spostarsi su _Config_ e selezionare l'interfaccia:
+
+  - **FastEthernet 0/4**, impostarla su _Trunk_ e selezionare la VLAN10 e la VLAN20, escludendo la VLAN30 in quanto non è presente e il suo traffico non può essere trasmesso allo Switch di sopra.
+
+:pushpin:`Checkpoint: per verificare che le VLAN siano state impostate correttamente tra i due Switch provare a eseguire dal PC10_1 il comando 'ping' verso il PC10_3.
+Se il comando da esito positivo vuol dire che i due PC comunicano tra loro e possiamo proseguire al passo successivo.
+
 [Torna su](https://github.com/matteob2609/Packet-Tracer-creazione-VLAN#creazione-di-una-semplice-vlan)
 
 ---
